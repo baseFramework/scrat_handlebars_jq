@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "scrat-team/router": "0.1.0",
+    "scrat-team/each": "0.1.0",
+    "scrat-team/es5-safe": "0.1.0",
+    "scrat-team/lru-cache": "0.1.0"
+  }
+}

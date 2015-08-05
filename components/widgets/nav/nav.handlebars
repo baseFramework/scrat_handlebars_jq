@@ -1,0 +1,15 @@
+<ul>
+  {{#each this}}
+  <li class="{{#if active}}active{{/if}} open"
+    data-page="{{page}}">
+    <a href="{{#if url}}{{url}}{{else}}javascript:void(0);{{/if}}">
+      {{#if icon}}<i class="fa fa-lg fa-fw {{icon}}"></i>{{/if}}
+      <span class="menu-item-parent">{{name}}</span>
+      {{#if children}}
+        <b class="collapse-sign"><em class="fa fa-plus-square-o"></em></b>
+      {{/if}}
+    </a>
+    {{{subNav children}}}
+  </li>
+  {{/each}}
+</ul>

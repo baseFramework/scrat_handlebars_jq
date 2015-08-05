@@ -1,0 +1,125 @@
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.minifyme {
+  top: 1px;
+}
+
+.smart-style-3 .btn-primary, .smart-style-3 .smart-form .button {
+background-color: #3b9ff3;
+border-color: #3292E2;
+}
+
+
+.smart-style-2 .minifyme {
+  top: 21px;
+}
+
+.smart-style-2.minified .minifyme {
+  position: absolute;
+  top: 0;
+}
+
+.smart-style-2.minified #left-panel {
+  padding-top: 40px !important;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #3b9ff3;
+    border-color: #3292E2;
+    cursor: default
+}
+
+
+.fixed-ribbon #ribbon {
+  top: 0;
+  background-color: #e7e7e7;
+  height: 41px;
+}
+
+#left-panel .login-info {
+  background-color:#e7e7e7;
+  height: 40px;
+}
+
+
+/* 工程切换下拉列表 */
+#switcher, #switcher_chosen {
+  float: right;
+  width: 200px;
+  margin: 8px;
+}
+
+#btn-add-project {
+  margin-top: 6px;
+}
+
+#notice-bar {
+  float: right;
+  width: 80px;
+  margin: 12px 8px 0px 8px;
+}
+#dialog{
+    display: none;
+}
+
+.login-info span a img{
+    border-left-width: 0px;
+}
+.login-info span a span#user-logout{
+    padding-left: 5px;
+}
+
+#loadingbar {
+    position: fixed;
+    z-index: 2147483647;
+    top: 0;
+    left: -6px;
+    width: 1%;
+    height: 2px;
+    background: #1E90FF;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.fabtn{
+    color:#058dc7;
+}
+
+.state-wrap i{
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+.task-tr td a{
+    padding: 3px 6px !important;
+}
+
+.state-wrap{
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+#mask{
+    position: absolute;
+    left: 0;
+    top:0;
+    background: rgba(41,156,245,.05);
+}
