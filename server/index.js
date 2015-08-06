@@ -29,7 +29,7 @@ app.use(compress());
 app.use('/co', middleware.combo());
 app.use(middleware.router({index: '/' + meta.name + '/' + meta.version + '/index.html'}));
 app.use(middleware.static());
-app.use(middleware.proxy('http://127.0.0.1:9900'));
+//app.use(middleware.proxy('http://127.0.0.1:9900'));
 app.use(middleware.error());
 
 if (require.main === module) {

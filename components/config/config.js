@@ -1,9 +1,6 @@
 'use strict';
 
-// 左侧导航栏配置
+// 导航栏配置
 exports.nav = {
-    dashboard: {
-        name: '控制台',
-        icon: 'fa-home'
-    }
+    default:'index'     //配置默认显示页面
 };

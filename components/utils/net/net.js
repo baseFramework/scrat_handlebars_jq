@@ -1,4 +1,3 @@
-var log = require('utils/log');
 
 var request = function(method, url, opt){
     opt = $.extend({
@@ -12,7 +11,6 @@ var request = function(method, url, opt){
     }
     opt.data.project_id = opt.project_id;
     var deferred = $.ajax(url, opt).fail(function(jqXHR, textStatus, errorThrown){
-        log.error('网络错误 [' + (errorThrown.message || jqXHR.status) + ']', '请求错误');
     });
     deferred.done(function(data){
         if(opt.hasOwnProperty('success')){
@@ -24,17 +22,13 @@ var request = function(method, url, opt){
                 }
             }
         }
-        //alert(data.status);
-        console.log('status' + data.status);
         if(data.status !== 'success'){
             if(data.error && data.error.code == 10001){
                 location.href=data.object.login_url;
             } else {
-                log.error(data.error, '请求错误');
             }
             return false;
         }
-        //console.log('net ' + method + ' ' + url, data);
     });
     return deferred;
 };

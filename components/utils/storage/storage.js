@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = require('cache')({
-  namespace: 'nts',
+  namespace: 'todo',
   localStorage: true
 });
