@@ -1,0 +1,25 @@
+.task-list {
+    -webkit-user-select: initial;
+}
+
+div.widget-body {
+    padding-bottom: 0px;
+}
+
+div.form-group div select {
+    padding-left: 8px;
+    color: #000000;
+}
+
+div.tc-message {
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: red;
+}
+
+.tc-alarms ul {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;"
+}

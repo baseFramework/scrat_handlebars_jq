@@ -1,0 +1,50 @@
+.role-wrap-input{
+    position: relative;
+    width: 600px;
+}
+.role-wrap-input .userSelect{
+    width: 220px !important;
+    right: 360px;
+}
+
+.role-wrap-input .roleSelect{
+    width: 220px !important;
+    margin-left: 80px;
+}
+
+#role-add{
+    margin-top: 5px !important;
+}
+
+.role-wrap-input .dropdown-toggle{
+    margin-left: 20px !important;
+}
+
+
+.role-wrap-input button{
+    margin-top: 0!important;
+}
+.thumbnail{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 5%;
+}
+.thumbnail img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 20%;
+}
+.thumbnail h2{
+    text-align: center;
+    margin: 0;
+}
+
+.jumbotron p {
+    text-align: center;
+    margin: 0;
+}
+.role-tip{
+    color: #999;
+    font-size: 16px;
+}

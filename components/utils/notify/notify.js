@@ -11,13 +11,14 @@ var exports = module.exports = function(message, title){
 };
 
 exports.bad = function(message, title){
-    $.smallBox({
-        title : title || "发生错误",
-        content : "<i class='fa fa-clock-o'></i> <i>" + (message || '未知错误，呵呵') + "</i>",
-        color : "#C46A69",
-        iconSmall : "fa fa-times fa-2x fadeInRight animated",
-        timeout : 4000
-    });
+    console.log(message);
+    //$.smallBox({
+    //    title : title || "发生错误",
+    //    content : "<i class='fa fa-clock-o'></i> <i>" + (message || '未知错误，呵呵') + "</i>",
+    //    color : "#C46A69",
+    //    iconSmall : "fa fa-times fa-2x fadeInRight animated",
+    //    timeout : 4000
+    //});
 };
 
 exports.confirm = function(message, title, callback){

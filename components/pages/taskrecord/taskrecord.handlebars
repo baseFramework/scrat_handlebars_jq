@@ -1,0 +1,80 @@
+<div class="jarviswidget jarviswidget-color-blueLight taskrecord"
+     id="task-{{taskId}}-taskrecord-grid" style="box-shadow: 0 0 5px rgba(0,0,0,0.2)"
+     data-widget-editbutton="false">
+    <header>
+        <span style="margin: 5px">
+           任务历史
+        </span>
+        <div class="record-dateSearch">
+            <div id="input-date" class="input-append date form_datetime">
+                <input id="rec-start-tm" class="form-control record-date-input" size="16" type="text" value="{{startTime}}" readonly>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <span> To </span>
+            <div id="input-date-end" class="input-append date form_datetime">
+                <input id="rec-end-tm" class="form-control record-date-input" size="16" type="text" value="{{curDate}}" readonly>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+        </div>
+        <div class="record-idSearch">
+            <label class="col-sm-2 control-label" for="formGroupInputSmall">调度ID</label>
+            <input class="form-control" type="text" id="recordInput" placeholder="任务调度ID">
+        </div>
+        <a href="javascript:void(0);" title="刷新"  class="recbtn btn btn-primary taskrecord-refresh"><i class="fa fa-refresh"></i></a>
+        <a href="javascript:void(0);" title="查询" class="recbtn record-searchBtn btn btn-primary taskrecord-search"><i class="fa fa-search"></i></a>
+    </header>
+    <div style="border: 1px solid #ccc">
+        <div class="widget-body no-padding">
+            <table id="taskrecord-list-{{taskId}}-column"
+                   class="table table-striped table-bordered table-hover smart-form">
+                <thead>
+                <tr>
+                    <th width="250">任务调度ID</th>
+                    <th width="130">开始时间</th>
+                    <th width="130">结束时间</th>
+                    <th width="200">任务输出</th>
+                    <th width="100">任务结果</th>
+                    <th>错误信息</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each taskRecords}}
+                    <tr rel="resource"
+                        data-id="{{id}}">
+                        <td>{{tsid}}</td>
+                        <td>{{startTime}}</td>
+                        <td>{{endTime}}</td>
+                        <td>{{result}}</td>
+                        <td>{{status}}</td>
+                        <td>{{errInfo}}</td>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="dt-row dt-bottom-row">
+    <div class="row">
+        <div class="col-sm-5 page-info">
+            <div class="dataTables_info" id="task-list-1-column_info">当前显示第{{pageNo}}页 {{startRecordNo}}到{{endRecordNo}}
+                条，共{{lastPageNo}}页 {{count}}条
+            </div>
+        </div>
+        <div class="col-sm-7 text-right">
+            <div class="dataTables_paginate paging_bootstrap_full">
+                <ul class="pagination">
+                    <li class="first"><a href="javascript:void(0);">首页</a></li>
+                    <li class="prev"><a href="javascript:void(0);">上一页</a></li>
+                    <li class="">
+                        <input style="float: left;padding-top:5px;padding-bottom:5px;text-align: center;width: 50px" type="text"
+                               name="pageNo" size="1">
+                    </li>
+                    <li class=" "><a href="javascript:void(0);">go</a></li>
+                    <li class="next"><a href="javascript:void(0);">下一页</a></li>
+                    <li class="last"><a href="javascript:void(0);">末页</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

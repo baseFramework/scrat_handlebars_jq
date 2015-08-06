@@ -1,0 +1,11 @@
+.login-content {
+	margin: 100px auto 0;
+	width: 400px;
+}
+.login-footer {
+	margin-top: 40px;
+}
+
+.login-content input {
+	padding: 0 10px 0 10px;
+}

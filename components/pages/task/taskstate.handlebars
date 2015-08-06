@@ -1,0 +1,69 @@
+<div class="jarviswidget jarviswidget-sortable" id="wid-id-1" data-widget-colorbutton="false"
+     data-widget-editbutton="false" role="widget" style="">
+    <div role="content">
+        <div class="widget-body">
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">脚本路径:</label>
+
+                        <div class="col-md-4">
+                            <input id="scriptPath-{{taskId}}" class="form-control" disabled="disabled" type="text"
+                                   value="{{scriptPath}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">任务调度ID:</label>
+
+                        <div class="col-md-6">
+                            <input id="tsid-{{taskId}}" class="form-control" disabled="disabled" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">开始时间:</label>
+
+                        <div class="col-md-4">
+                            <input id="startTime-{{taskId}}" class="form-control" disabled="disabled" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">结束时间:</label>
+
+                        <div class="col-md-4">
+                            <input id="endTime-{{taskId}}" class="form-control" disabled="disabled" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">运行状态:</label>
+
+                        <div class="col-md-3">
+                            <input id="status-{{taskId}}" class="form-control" disabled="disabled" type="text">
+                        </div>
+                    </div>
+                    <!--<div class="form-group">-->
+                    <!--<label class="col-md-2 control-label">运行次数:</label>-->
+
+                    <!--<div class="col-md-2">-->
+                    <!--<input class="form-control" disabled="disabled" placeholder="214次"-->
+                    <!--type="text">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">滚动消息:</label>
+
+                        <div class="col-md-3">
+                            <input id="auto-scroll-{{taskId}}" type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">正在处理:</label>
+
+                        <div data-timestamp="{{timestamp}}" class="col-md-10" id="logInfo-{{taskId}}"
+                             style="-webkit-user-select: initial;height: 400px;overflow-y: scroll">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

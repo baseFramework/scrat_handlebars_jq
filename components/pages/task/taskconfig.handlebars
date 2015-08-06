@@ -1,0 +1,83 @@
+<div class="jarviswidget jarviswidget-sortable" id="wid-id-1" data-widget-colorbutton="false"
+     data-widget-editbutton="false" role="widget" style="">
+    <div role="content">
+        <div class="widget-body">
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">任务ID:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-taskid-{{id}}" class="form-control" disabled="disabled" type="text"
+                                   value="{{id}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">任务编码:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-code-{{id}}" class="form-control" disabled="disabled" type="text"
+                                   value="{{code}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">脚本路径:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-path-{{id}}" class="form-control" disabled="disabled" type="text"
+                                   value="{{path}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">脚本参数:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-param-{{id}}" class="form-control" type="text"
+                                   value="{{param}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">调度类型:</label>
+
+                        <div class="col-md-6">
+                            <select class="form-control" id="tc-type-{{id}}">
+                                <option id="tc-type-{{id}}-0">cron</option>
+                                <option id="tc-type-{{id}}-1">interval</option>
+                                <!--<option>delay</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">表达式:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-exp-{{id}}" class="form-control" type="text"
+                                   value="{{exp}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">重试次数:</label>
+
+                        <div class="col-md-6">
+                            <input id="tc-retry-{{id}}" class="form-control" type="text"
+                                   value="{{retry}}">
+                        </div>
+                    </div>
+                    <div id="tc-mess-{{id}}" class="tc-message"></div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">备注:</label>
+                        <label class="control-label">
+                            {{configs.extInfo.remark}}
+                        </label>
+                    </div>
+                    <div class="form-group" style="margin-bottom:0px;">
+                        <a id="tc-recovery-{{id}}" href="javascript:void(0);"><i
+                                class="fa fa-gear"></i>恢复默认配置</a>
+
+                        <div id="tc-tips-{{id}}" class="tc-tips"></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

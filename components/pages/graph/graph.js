@@ -1,12 +1,11 @@
 'use strict';
 
-var tpl = __inline('index.handlebars');
-
 module.exports = {
-  init: function () {
+  init: function (ctx) {
+    this.id = ctx.params.id;
     this.render('#content');
   },
   render: function (selector) {
-    $(selector).html(tpl());
+    $(selector).html('<h1>Hello, graph!</h1>');
   }
 };

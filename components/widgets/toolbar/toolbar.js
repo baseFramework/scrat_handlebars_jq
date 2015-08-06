@@ -22,32 +22,33 @@ toolbar.init = function (ctx, done) {
 
   var id = ctx.params.id;
   var page = ctx.params.page;
-  var pageName = utils.getPageNameFromConfig(config, page);
+  //var pageName = utils.getPageNameFromConfig(config, page);
 
-  projectS.list().done(function (data) {
-    each(data.object, function (project) {
-      if (id === String(project.id)) {
-        cfg.breadcrumb.push({
-          link: '#!/' + id + '/',
-          name: project.name
-        }, {
-          name: pageName
-        });
-        project.selected = true;
-      }
-      cfg.projects.push(project);
-    });
-
-    if (!cfg.breadcrumb.length) {
-      cfg.breadcrumb.push({
-        name: '首页'
-      });
-    }
-
-    that.render('#ribbon', cfg);
-    that.bindEvents();
+  //projectS.list().done(function (data) {
+  //  each(data.object, function (project) {
+  //    if (id === String(project.id)) {
+  //      cfg.breadcrumb.push({
+  //        link: '#!/' + id + '/',
+  //        name: project.name
+  //      }, {
+  //        name: pageName
+  //      });
+  //      project.selected = true;
+  //    }
+  //    cfg.projects.push(project);
+  //  });
+  //
+  //  if (!cfg.breadcrumb.length) {
+  //    cfg.breadcrumb.push({
+  //      name: '首页'
+  //    });
+  //  }
+  //
+  //  that.render('#ribbon', cfg);
+  //  that.bindEvents();
+  //  done && done();
+  //});
     done && done();
-  });
 };
 
 toolbar.appendBread = function (link, name) {

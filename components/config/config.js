@@ -3,7 +3,7 @@
 // 左侧导航栏配置
 exports.nav = {
     dashboard: {
-        name: '首页',
+        name: '控制台',
         icon: 'fa-home'
     }
 };

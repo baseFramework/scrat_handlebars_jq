@@ -1,0 +1,88 @@
+.taskrecord-refresh {
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+    height: 32px;
+}
+
+.taskrecord {
+    -webkit-user-select: initial;
+}
+
+.page-info{
+    -webkit-user-select: initial;
+}
+
+.record-dateSearch{
+    position: absolute;
+    top:5px;
+    right: 320px;
+    width: 540px;
+}
+
+#input-date{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+#input-date-end{
+    position: absolute;
+    top:0px;
+    left:260px;
+}
+.datetimepicker{
+    margin-left: -150px;
+    width: 220px;
+}
+.datetimepicker table{
+    width: 220px;
+}
+
+.record-date-input{
+    width: 220px !important;
+}
+
+.record-dateSearch span{
+    position: absolute;
+    top:2px;
+    left:230px;
+    height: 32px;
+    line-height: 28px;
+}
+
+.record-dateSearch input{
+    width: 120px;
+    float: left;
+}
+
+
+.record-idSearch{
+    position: absolute;
+    top:0;
+    right: 120px;
+    width: 280px;
+}
+
+.record-idSearch label{
+    text-align: right;
+    width: 80px;
+    height: 32px;
+}
+
+.record-idSearch input{
+    width: 200px;
+    margin-top: 5px;
+    height: 32px;
+}
+
+.record-searchBtn{
+    float: right;
+    margin-top: 2px;
+    margin-right: 10px;
+    height: 32px;
+}
+
+.recbtn{
+    color: rgba(0,0,0,.4)
+}
