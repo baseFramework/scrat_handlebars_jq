@@ -4,8 +4,6 @@ var each = require('each');
 var router = require('router');
 var storage = require('utils/storage');
 var config = require('config');
-var utils = require('utils');
-var minify = require('widgets/minify');
 var pages = {
     index: 'pages/index',
     dashboard: 'pages/dashboard'
